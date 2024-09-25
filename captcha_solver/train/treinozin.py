@@ -99,7 +99,7 @@ def train_crnn(image_dir, csv_file, epochs=50, lr0=0.001, lrf=0.01, momentum=0.9
 # 8. Exemplo de execução
 if __name__ == '__main__':
     # Definir o caminho para as imagens e o arquivo CSV
-    image_directory = 'captcha_solver\datasets'
-    csv_labels = 'captcha_solver\datasets\labels.csv'
+    image_directory = 'captcha_solver\\datasets'
+    csv_labels = 'captcha_solver\\datasets\\labels.csv'
     # Iniciar o treinamento do modelo
     train_crnn(image_directory, csv_labels, epochs=50, lr0=0.001, lrf=0.01, momentum=0.937, weight_decay=0.0005, patience=10, batch_size=32)
